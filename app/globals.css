@@ -2,26 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  padding-top: 30px;
+  align-items: start;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-right: 30px;
+  list-style: none;
+}
+
+.links li {
+  color: #767D8A;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+.links li:hover {
+  color: #ffffff;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-button img {
+  margin-top: 1px;
+}
+
+.socios-container {
+  height: 100vh;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-size: cover;
+  background-position: center;
+}
+
+
+h1 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.requisitos {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.container-socios {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextjs-toast-errors-parent {
+  display: none;
+}
+
+@media screen and (max-width:700px) {
+
+  .header-container {
+    display: none;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .hamburger {
+    display: inline;
+    /* Otra opción válida sería display: inline; */
+  }
+
+
+
 }

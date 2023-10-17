@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+@import '~font-awesome/css/font-awesome.min.css';
+
+
+.App-header {
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    padding-bottom: 2rem;
+}
+
+.titulo-principal {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.carousel-images {
+    position: relative;
+    padding-top: 55px;
+    height: 400px;
+    max-width: 750px;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 89%;
+    height: 99%;
+    border-radius: 8px;
+}
+
+.slide_direction {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left,
+.right {
+    color: #fff;
+    padding: 10px 8px 8px 13px;
+    margin: 0 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 10px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.carousel-indicator {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dot {
+    background-color: #333;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.active {
+    background-color: #fa2020;
+}
+
+.container-bottom {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+}
+
+.container-bottom h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.container-text {
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+.container-text h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'TuFuentePersonalizada', serif;
+}
+
+.container-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.coordenadas {
+    width: 100px;
+}
+
+.container-images {
+    display: flex;
+}
+
+.carousel {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-container {
+    width: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.book {
+    width: 80%;
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+
+.btn {
+    border: 0;
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    margin-top: 80px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 150px;
+}
+
+.btn span {
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.3;
+}
+
+button:hover span {
+    background: none;
+
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.container-hamburger {
+    display: flex;
+    width: 100%;
+    display: none;
+    justify-content: end;
+}
+
+.hamburger {
+    display: none;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.links-movil {
+    display: none;
+}
+
+
+
+@media screen and (max-width:475px) {
+    .carousel-images {
+        display: flex;
+        justify-content: center;
+    }
+
+    .titulo-principal {
+        font-size: 14px;
+    }
+
+    .mapa {
+        height: 200px;
+        width: 180px;
+    }
+
+}
