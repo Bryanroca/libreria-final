@@ -40,7 +40,7 @@ export default function Contacto() {
         script.async = true;
 
         script.onload = () => {
-            emailjs.init(process.env.REACT_APP_SECRET);
+            emailjs.init("4aKVAfJUTtjZl5VyE");
         };
 
         document.body.appendChild(script);

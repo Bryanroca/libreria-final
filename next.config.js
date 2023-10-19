@@ -2,8 +2,5 @@
 const nextConfig = {}
 
 module.exports = {
-    distDir: 'out',
-    images: {
-        domains: ['res.cloudinary.com']
-    }
+    distDir: 'build',
 }
